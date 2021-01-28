@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Currency Converter</title>
+    <link rel="shortcut icon" href="./assets/coin.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="grid-layout">
+
+        <header>
+            <div class="header-div header--left">
+                <img class="header-icon" src="./assets/coin.svg" alt="Coin">
+                <h2>New Currency Converter</h2>
+            </div>
+            <div class="header-div header--right">
+                <img class="header-icon" src="./assets/hurtado-icon.png" alt="David Hurtado logo">
+                <p>Created by <br><strong>David Hurtado</strong></p>
+            </div>
+        </header>
+        
+        <div class="presentation center-grid">
+            <img class="presentation-img" src="./assets/spongebob.png" alt="spongebob">
+            <h1>Let's exchange money 🤑😎</h1>
+            <p class="presentation-p">Hurtado's official currency converter</p>
+        </div>
+    
+        <div class="program">
+            <div class="currency-container" id="currencyContainer1">
+                <p class="current-currency" id="currentCurrency1">Choose a currency</p>
+                <input type="number" id="currencyInput1" autocomplete="off" onchange="convertCurrency(1)">
+
+                <button class="currency-list-button" id="currencyListButton1">Change currency</button>
+                <div class="currency-list" id="currencyList1">
+                    <div class="USD" id="USD1"><p>US Dollar</p><p>USD</p></div>
+                    <div class="EUR" id="EUR1"><p>Euro</p><p>EUR</p></div>
+                    <div class="COP" id="COP1"><p>Colombian Peso</p><p>COP</p></div>
+                    <div class="MXN" id="MXN1"><p>Mexican Peso</p><p>MXN</p></div>
+                    <div class="ARS" id="ARS1"><p>Argentine Peso</p><p>ARS</p></div>
+                    <div class="PEN" id="PEN1"><p>Peruvian Sol</p><p>PEN</p></div>
+                    <div class="VES" id="VES1"><p>Venezuelan Bolívar</p><p>VES</p></div>
+                    <div class="BOB" id="BOB1"><p>Bolivian Boliviano</p><p>BOB</p></div>
+                    <div class="BRL" id="BRL1"><p>Brazilian Real</p><p>BRL</p></div>
+                    <div class="CLP" id="CLP1"><p>Chilean Peso</p><p>CLP</p></div>
+                    <div class="CRC" id="CRC1"><p>Costa Rican Colón</p><p>CRC</p></div>
+                    <div class="CUP" id="CUP1"><p>Cuban Peso</p><p>CUP</p></div>
+                    <div class="PYG" id="PYG1"><p>Paraguayan Guaraní</p><p>PYG</p></div>
+                    <div class="UYU" id="UYU1"><p>Uruguayan Peso</p><p>UYU</p></div>
+                    <div class="RUB" id="RUB1"><p>Russian Ruble</p><p>RUB</p></div>
+                </div>
+            </div>
+
+            <img id="change-values" src="./assets/change.svg" alt="Intercambiar">
+
+            <div class="currency-container" id="currencyContainer2">
+                <p class="current-currency" id="currentCurrency2">Choose a currency</p>
+                <input type="number" id="currencyInput2" onchange="convertCurrency(2)">
+
+                <button class="currency-list-button" id="currencyListButton2">Change currency</button>
+                <div class="currency-list" id="currencyList2">
+                    <div class="USD" id="USD2"><p>US Dollar</p><p>USD</p></div>
+                    <div class="EUR" id="EUR2"><p>Euro</p><p>EUR</p></div>
+                    <div class="COP" id="COP2"><p>Colombian Peso</p><p>COP</p></div>
+                    <div class="MXN" id="MXN2"><p>Mexican Peso</p><p>MXN</p></div>
+                    <div class="ARS" id="ARS2"><p>Argentine Peso</p><p>ARS</p></div>
+                    <div class="PEN" id="PEN2"><p>Peruvian Sol</p><p>PEN</p></div>
+                    <div class="VES" id="VES2"><p>Venezuelan Bolívar</p><p>VES</p></div>
+                    <div class="BOB" id="BOB2"><p>Bolivian Boliviano</p><p>BOB</p></div>
+                    <div class="BRL" id="BRL2"><p>Brazilian Real</p><p>BRL</p></div>
+                    <div class="CLP" id="CLP2"><p>Chilean Peso</p><p>CLP</p></div>
+                    <div class="CRC" id="CRC2"><p>Costa Rican Colón</p><p>CRC</p></div>
+                    <div class="CUP" id="CUP2"><p>Cuban Peso</p><p>CUP</p></div>
+                    <div class="PYG" id="PYG2"><p>Paraguayan Guaraní</p><p>PYG</p></div>
+                    <div class="UYU" id="UYU2"><p>Uruguayan Peso</p><p>UYU</p></div>
+                    <div class="RUB" id="RUB2"><p>Russian Ruble</p><p>RUB</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div></div>
+    
+        <footer class="center-grid">
+            <p>Created, designed, programmed by <a target="_blank" href="https://santigo171.github.io">David Hurtado</a></p>
+            <p>Icons by <a target="_blank" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></p>
+            <div>Icons by <a target="_blank" href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <!-- <p>No olvidar poner el background color del currency-container con la bandera de la moneda correspondiente</p> -->
+        </footer>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

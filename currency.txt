@@ -1,0 +1,17 @@
+<p>US Dollar</p><p>USD</p>
+
+<p>Euro</p><p>EUR</p>
+
+<p>Colombian Peso</p><p>COP</p>
+<p>Mexican Peso</p><p>MXN</p>
+<p>Argentine Peso</p><p>ARS</p>
+<p>Peruvian Sol</p><p>PEN</p>
+<p>Venezuelan Bolívar</p><p>VES</p>
+<p>Bolivian Boliviano</p><p>BOB</p>
+<p>Brazilian Real</p><p>BRL</p>
+<p>Chilean Peso</p><p>CLP</p>
+<p>Costa Rican Colón</p><p>CRC</p>
+<p>Cuban Peso</p><p>CUP</p>
+<p>Paraguayan Guaraní</p><p>PYG</p>
+<p>Uruguayan Peso</p><p>UYU</p>
+<p>Russian Ruble</p><p>RUB</p>

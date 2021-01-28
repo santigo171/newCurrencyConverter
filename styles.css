@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: white;
+
+  background-color: rgb(70, 67, 67);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  width: 100vw;
+}
+
+.center-grid {
+  justify-content: center;
+  align-items: center;
+}
+
+.center-grid > * {
+  justify-self: center;
+  align-self: center;
+}
+
+button {
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  max-width: 150px;
+  height: 30px;
+
+  font-size: 1.4rem;
+
+  background-color: #eef7efb9;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #73df95;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #2cca5e;
+}
+
+@media (min-width: 700px) {
+  .grid-layout {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 7vh 1fr 1fr 1fr 10vh;
+  }
+}
+
+header {
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: #1e7138;
+  /* background-color: rgb(0, 16, 51); */
+}
+
+.header-icon {
+  width: 45px;
+}
+
+.header-div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-div > * {
+  margin: 0 10px;
+}
+
+.header--left > h2 {
+  font-size: 2.3rem;
+}
+
+.header--right {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 532px) {
+  .header--right {
+    flex-direction: row-reverse;
+  }
+  .header-div {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 630px) {
+  header {
+    padding: 3px 10px;
+  }
+}
+
+.presentation {
+  margin: 20px 0;
+
+  display: grid;
+  grid-template-columns: minmax(500px);
+  grid-gap: 10px;
+
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.presentation-img {
+  width: 200px;
+}
+
+.presentation-p {
+  font-size: 1.7rem;
+}
+
+.program {
+  margin: 20px auto 150px auto;
+  max-width: 415px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 770px) {
+  .program {
+    margin: 20px auto;
+    max-width: unset;
+  }
+}
+
+.currency-container {
+  padding: 10px;
+  margin: 25px;
+
+  border: black 2px solid;
+  border-radius: 7px;
+  width: 300px;
+  height: 120px;
+
+  display: grid;
+
+  font-size: 1.8rem;
+
+  background-color: #000;
+}
+
+.currency-container > input {
+  border: none;
+  height: 23px;
+
+  text-align: center;
+}
+
+.currency-container > * {
+  margin: 3px;
+}
+
+.currency-list {
+  display: none;
+  height: 250px;
+  overflow-y: scroll;
+  background-color: #000;
+}
+
+.currency-list > div {
+  height: 40px;
+  padding: 5px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+#change-values {
+  width: 70px;
+
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  /* margin-top: 150px; */
+  padding: 10px;
+
+  font-size: 1.4rem;
+  text-align: center;
+
+  background-color: rgb(31, 31, 31);
+}
+
+footer > * {
+  margin: 3px 0;
+}
+
+.USD {
+  background-image: url(./assets/flags/usa.png);
+}
+.EUR {
+  background-image: url(./assets/flags/europe.png);
+}
+.COP {
+  background-image: url(./assets/flags/colombia.png);
+  background-size: contain;
+  background-repeat: repeat;
+}
+.MXN {
+  background-image: url(./assets/flags/mexico.png);
+}
+.ARS {
+  background-image: url(./assets/flags/argentina.png);
+}
+.PEN {
+  background-image: url(./assets/flags/peru.png);
+}
+.VES {
+  background-image: url(./assets/flags/venezuela.png);
+}
+.BOB {
+  background-image: url(./assets/flags/bolivia.png);
+}
+.BRL {
+  background-image: url(./assets/flags/brazil.png);
+}
+.CLP {
+  background-image: url(./assets/flags/chile.png);
+}
+.CRC {
+  background-image: url(./assets/flags/costa-rica.png);
+}
+.CUP {
+  background-image: url(./assets/flags/cuba.png);
+}
+.PYG {
+  background-image: url(./assets/flags/paraguay.png);
+}
+.UYU {
+  background-image: url(./assets/flags/uruguay.png);
+}
+.RUB {
+  background-image: url(./assets/flags/russia.png);
+  background-size: contain;
+  background-repeat: repeat;
+}
