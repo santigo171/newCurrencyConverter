@@ -66,16 +66,29 @@ function operation(currency1, currency1Mount, currency2) {
 }
 
 function changeValues() {
-    currencyInput2.setAttribute('value', "999999999999999");
-    currencyInput1.setAttribute('value', "222222222222222");
+    //cambia el titulo
 
     currentCurrency1_p = document.getElementById("currentCurrency1");
     currentCurrency2_p = document.getElementById("currentCurrency2");
     newCurrentCurrency1 = currentCurrency2_p.innerHTML;
     newCurrentCurrency2 = currentCurrency1_p.innerHTML;
+    currentCurrency1_p.innerHTML = newCurrentCurrency1;
+    currentCurrency2_p.innerHTML = newCurrentCurrency2;
 
-    currentCurrency1.innerHTML = newCurrentCurrency1;
-    currentCurrency2.innerHTML = newCurrentCurrency2;
+    //cambia el input
+    newCurrencyInput2 = currencyInput1.value;
+    newCurrencyInput1 = currencyInput2.value;
+    currencyInput2.value = newCurrencyInput2;
+    currencyInput1.value = newCurrencyInput1;
+
+    currencyContainer1 = document.getElementById("currencyContainer1");
+    currencyContainer2 = document.getElementById("currencyContainer2");
+    newCurrencyContainer1Class = currencyContainer2.classList[1];
+    newCurrencyContainer2Class = currencyContainer1.classList[1];
+    currencyContainer1.classList.remove(newCurrencyContainer2Class);
+    currencyContainer2.classList.remove(newCurrencyContainer1Class);
+    currencyContainer1.classList.add(newCurrencyContainer1Class);
+    currencyContainer2.classList.add(newCurrencyContainer2Class);
 }
 
 function convertCurrency(number) {
@@ -94,7 +107,7 @@ function convertCurrency(number) {
     currency2 = otherCurrencyContainer.classList[1];
     
     textToPrint = operation(currency1, currency1Mount, currency2).toFixed(2);
-    otherCurrencyInput.setAttribute('value', textToPrint);
+    otherCurrencyInput.value = textToPrint;
 }
 
 function currencyContainerStyles(number, currencyCode) {
